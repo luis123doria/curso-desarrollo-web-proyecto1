@@ -1,2 +1,7 @@
-# curso-desarrollo-web
-Repositorio Remoto para el Curso de Desarrollo Web
+# Curso de Desarrollo Web
+
+## Proyecto 1: Sitio Freelancer
+
+Bienvenido al Curso de Desarrollo Web!
+
+Este es el primer proyecto que desarollaremos en el Curso
