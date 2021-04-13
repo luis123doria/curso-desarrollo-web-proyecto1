@@ -53,6 +53,46 @@ Empezaremos con un Sitio Freelancer
 
 * Adicion de las primeras etiquetas de **Headings** y **Parrafos** para empezar a estructurar el contenido.
 
-	------
+
+------
+
+## Commit Nro 3 - v0.4
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados** |
+| ------------------- | --------------------- |
+| None                | index.html            |
+
+### Explicación
+
+* Estructuracion completa de los elementos en el index.html
+
+	```html
+	<!-- Se usa header para el primer H1-->
+	<header>
+		<h1>Free-Lancers</h1>
+	</header>
+	
+	<!-- Si empieza con un heading debe ir un section-->
+	<section>
+		<h2>Una Comunidad de  Freelancers</h2>
+		<p>Caracas, Venezuela </p>
+	</section>
+	
+	<!-- El main tiene nuestro contenido principal -->
+	<main>
+		<h2>Nuestros Servicios</h2>
+		<section>
+			<h3>Diseño Web</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam.</p>
+		</section>
+	</main>
+	
+	<!-- El footer para pie de pagina -->
+	<footer>
+		<p>All Rights Reserved. Luisfer Doria, 2021</p>
+	</footer>
+	```
 
 	
