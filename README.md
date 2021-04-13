@@ -185,3 +185,43 @@ Empezaremos con un Sitio Freelancer
 
 ------
 
+## Commit Nro 7 - v0.8
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados**        |
+| ------------------- | ---------------------------- |
+| index.css           | index.html   <br />index.css |
+
+### Explicación
+
+Hemos creado un archivo CSS index.css, lo hemos enlazado al index.html y hemos creado algunos estilos para definir lo siguiente:
+
+- Tamaño Predeterminado de Fuente
+- Familia Tipográfica
+- Color de la Tipografía
+- Tamaño de la Tipografía para un H1
+
+```css
+/* Para tener un mejor manejo del tamaño de las tipografias, definir un tamaño estandar */
+html {
+	font-size: 18px;
+}
+
+/* Establecemos la familia de la fuente y el color */
+body {
+	font-family: Roboto;
+	color: #09001A;
+}
+
+/* Alineamos el h1 al centro y el tamaño será de 2.441rem, es decir el tamaño estandar de la fuente x los rem
+Ej: 18px * 2.441 */
+h1 {
+	text-align: center;
+	font-size: 2.441rem;
+}
+
+```
+
+------
+
