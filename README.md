@@ -143,3 +143,45 @@ Empezaremos con un Sitio Freelancer
 
 ------
 
+## Commit Nro 6 - v0.7
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados** |
+| ------------------- | --------------------- |
+| None                | index.html            |
+
+### Explicación
+
+* Agregamos el formulario a la pagina web
+
+	```html
+	<!-- Agregamos un formulario con form-->
+	<form action="">
+	
+	    <!-- Agrupamos cada input en un div (divider) -->
+	    <div>
+	        <input type="text" placeholder="Nombre">
+	    </div>
+	
+	    <div>
+	        <input type="email" placeholder="Correo">
+	    </div>
+	
+	    <div>
+	        <input type="text" placeholder="Teléfono">
+	    </div>
+	
+	    <div>
+	        <input type="textarea" placeholder="Mensaje">
+	    </div>
+	
+	    <div>
+	        <input type="submit" value="Enviar">
+		</div>
+	
+	</form>
+	```
+
+------
+
