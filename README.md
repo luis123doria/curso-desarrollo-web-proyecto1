@@ -37,9 +37,22 @@ Empezaremos con un Sitio Freelancer
 
 ### Explicación 
 
-Inicio del proyecto **Freelancer Site.**
-
-### Fin del Commit Nro 1
+* Inicio del proyecto **Freelancer Site.
 
 ------
 
+## Commit Nro 2 - v0.3
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados** |
+| ------------------- | --------------------- |
+| None                | index.html            |
+
+### Explicación
+
+* Adicion de las primeras etiquetas de **Headings** y **Parrafos** para empezar a estructurar el contenido.
+
+	------
+
+	
