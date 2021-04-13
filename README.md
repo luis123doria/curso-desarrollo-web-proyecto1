@@ -121,3 +121,25 @@ Empezaremos con un Sitio Freelancer
 
 ------
 
+## Commit Nro 5 - v0.6
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados** |
+| ------------------- | --------------------- |
+| None                | index.html            |
+
+### Explicación
+
+* Se agrego una imágen y 4 iconos
+
+	```html
+	<!-- Agregamos una imagen -->
+	<img src="img/header.jpg" alt="">
+	
+	<!-- Agregamos un icono #7D05D0 -->
+	<img src="img/map-solid-60.png">
+	```
+
+------
+
