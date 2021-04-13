@@ -95,4 +95,29 @@ Empezaremos con un Sitio Freelancer
 	</footer>
 	```
 
-	
+
+------
+
+## Commit Nro 4 - v0.5
+
+### Cambios realizados 
+
+| **Archivos Nuevos** | **Archivos Editados** |
+| ------------------- | --------------------- |
+| None                | index.html            |
+
+### Explicación
+
+* Se agrego el nav de la pagina web junto a 3 enlaces
+
+	```html
+	<!-- El nav se usa para agregar una barra de navegacion. Generalmente usa enlaces -->
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">About Us</a>
+		<a href="#">Contact</a>
+	</nav>
+	```
+
+------
+
