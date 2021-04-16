@@ -225,3 +225,30 @@ h1 {
 
 ------
 
+## Commit Nro 8 - v0.9
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados**     |
+| ------------------- | ------------------------- |
+| None                | index.html<br />index.css |
+
+### Explicación
+
+Hemos añadido en el archivo index.css algunos colores como variables, además hemos añadido algunos weight para las fuentes de título y párrafo.
+
+```css
+:root{
+	--purpleOscuro: #09001A;
+	--blancoBG: #F9F5FF;
+	--blancotxt: #F0E4FE;
+	--purple: #3A04A1;
+}
+
+.titulo {
+	font-weight: 700;
+	text-align: center;
+	font-size: 2.441rem;
+}
+```
+
