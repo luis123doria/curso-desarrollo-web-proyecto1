@@ -252,3 +252,28 @@ Hemos añadido en el archivo index.css algunos colores como variables, además h
 }
 ```
 
+------
+
+## Commit Nro 9 - v1.0
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados**                        |
+| ------------------- | -------------------------------------------- |
+| normalize.css       | index.html<br />index.css<br />normalize.css |
+
+### Explicación
+
+Hemos añadido Normalize a nuestro proyecto.
+Este se encarga de "normalizar" el código y reglas CSS para que la página se vea igual en Chrome, Firefox, Edge, Safari, Brave, dispositivos móviles, tablets, etc.
+
+```html
+<!-- Preload del Normalize -->
+<link rel="preload" href="stylesheet/normalize.css" as="style">
+
+<!-- Link Normalize.css -->
+<link rel="stylesheet" href="stylesheet/normalize.css">
+```
+
+------
+
