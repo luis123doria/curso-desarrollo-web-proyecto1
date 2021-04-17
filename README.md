@@ -277,3 +277,225 @@ Este se encarga de "normalizar" el código y reglas CSS para que la página se v
 
 ------
 
+## Commit Nro 10 - v1.1
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados**     |
+| ------------------- | ------------------------- |
+| None                | index.html<br />index.css |
+
+### Explicación
+
+Hemos editado el nav hasta tenerlo listo
+
+* Primero, hemos cambiado la estructura del nav en HTML: 
+
+	```html
+	<div class="nav-bg">
+		<nav class="main-nav container"> 
+			<a href="#">Home</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+		</nav>
+	</div>
+	```
+
+	* Tenemos un div con clase **nav-bg** que engloba el nav completo.
+	* Dentro, tenemos el nav con 2 clases: **main-nav** y **nav-container**.
+
+* Luego, hemos añadido el siguiente código en el CSS: 
+
+	```css
+	/* Estilos para el nav*/
+	.nav-bg {
+		background-color: #3A04A1;
+	}
+	
+	.main-nav {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.main-nav a {
+		color: #F0E4FE;
+		text-decoration-line: none;
+		font-size: 1.5rem;
+		padding: 1rem;
+		font-weight: 200;
+	}
+	
+	.main-nav a:hover {
+		background-color: #F9F5FF;
+		color: #09001A;
+	}
+	
+	.nav-container {
+		width: 75%;
+		margin: 0 auto; 
+	}
+	
+	```
+
+	* el **.nav-bg** edita el div que engloba al nav.
+	* el **main-nav** tiene el display flex con una alineación en modo *space-around*.
+	* el **main-nav a** contiene las propiedades de los enlaces.
+	* en el **main-nav a:hover** tenemos la pseudoclase del hover a cada enlace
+	* el **.nav-container** edita las propiedades generales del nav, como el tamaño o el margen. 
+		**Nota:** la clase **main-nav** tambien puede albergar esas propiedades, pero al colocar las en la clase **nav-container** podemos administrar dichas propiedades de una mejor manera mediante la metodología Utility First.
+
+### Metodologías de Código CSS
+
+* **BEM (Block, Element, Modifier):** Esta metodología indica que primero editamos los bloques, luego los elementos y luego los modificadores o pseudoclases. 
+
+	* Código HTML:
+
+		```html
+		<div class="card-container">
+		    <div class="card">
+		        <h1 class="card__titulo">
+		            Titulo del card
+		        </h1>
+		        <img class="card__imagen" src="imagen.jpg">
+		        <p class="card__parrafo">
+		            Lorem ipsum dolor sit amet.
+		        </p>
+		        <button class="card__button">
+		            Boton 
+		        </button>
+		    </div>
+		</div>
+		```
+
+	* Código CSS:
+
+		```css
+		/* Propiedades del container del card, respecto al documento */
+		.card-container {
+		    width: 25%;
+		}
+		
+		/* Propiedades del card */
+		.card {
+		    width: 100%;
+		}
+		
+		/* Propiedades del titulo */
+		.card__titulo {
+		    font-size: 2rem;
+		    font-weight: bold;
+		}
+		
+		/* Propiedades del parrafo */
+		.card__parrafo {
+		    font-size: 1rem;
+		    font-weight: 300;
+		}
+		
+		/* Propiedades del boton */
+		.card__boton {
+		    padding: 10px;
+		    background-color: red;
+		    color: white;
+		}
+		```
+
+* **Utility First (UF):** Esta metodología puede ser un poco mas caótica al tener mucho mas código, pero resulta en una mejor administración y orden de los elementos y sus propiedades.
+
+	En esta metodología, cada selector en CSS debe tener una sola propiedad con su respectivo valor, así, en el HTML solo debemos colocar la clase del selector que requerimos.
+
+	* Código HTML:
+
+		```html
+		<h1 class="titulo rojo-050">
+		    Bienvenido xd
+		</h1>
+		
+		<p class="parrafo rojo-010">
+		    Lorem ipsum dolor sit amet
+		</p>
+		
+		<button class="boton bg-rojo-100">
+		    Click aqui
+		</button>
+		```
+
+	* Código CSS:
+
+		```css
+		.titulo {
+		    font-size: 2rem;
+		    font-weight: bold;
+		}
+		
+		.parrafo {
+		    font-size: 1rem;
+		    font-weight: regular;
+		}
+		
+		.boton {
+		    padding: 10px;
+		}
+		
+		.bg-rojo-100 {
+		    color: #ff0000;
+		}
+		
+		.rojo-050 {
+		    color: #770000;
+		}
+		
+		.rojo-010 {
+		    color: #220000;
+		}
+		```
+
+* **Módulos:** Esta metodología nos permite tener una organización estructurada en el CSS, jerarquizada desde el elemento padre al hijo.
+
+	* Código HTML:
+
+		```html
+		<div class="nav-bg">
+			<nav class="main-nav nav-container"> 
+				<a href="#">Home</a>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+			</nav>
+		</div>
+		```
+
+	* Código CSS:
+
+		```css
+		/* Estilos para el nav*/
+		.nav-bg {
+			background-color: #3A04A1;
+		}
+		
+		.main-nav {
+			display: flex;
+			justify-content: space-around;
+		}
+		
+		.main-nav a {
+			color: #F0E4FE;
+			text-decoration-line: none;
+			font-size: 1.5rem;
+			padding: 1rem;
+			font-weight: 200;
+		}
+		
+		.main-nav a:hover {
+			background-color: #F9F5FF;
+			color: #09001A;
+		}
+		
+		.nav-container {
+			width: 75%;
+			margin: 0 auto; 
+		}
+		```
+
+		------
+
+		

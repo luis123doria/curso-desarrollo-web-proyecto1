@@ -12,6 +12,7 @@ html {
 
 /* Establecemos la familia de la fuente y el color */
 body {
+	background-color: #F9F5FF;
 	font-family: Roboto;
 	color: #09001A;
 	font-weight: lighter;
@@ -25,3 +26,34 @@ Ej: 18px * 2.441 */
 	text-align: center;
 	font-size: 2.441rem;
 }
+
+/* Estilos para el nav*/
+.nav-bg {
+	background-color: #3A04A1;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main-nav a {
+	color: #F0E4FE;
+	text-decoration-line: none;
+	font-size: 1.5rem;
+	padding: 1rem;
+	font-weight: 200;
+}
+
+.main-nav a:hover {
+	background-color: #F9F5FF;
+	color: #09001A;
+}
+
+.nav-container {
+	width: 75%;
+	margin: 0 auto; 
+}
+
+
+
