@@ -499,3 +499,65 @@ Hemos editado el nav hasta tenerlo listo
 		------
 
 		
+
+## Commit Nro 11 - v1.2
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados**     |
+| ------------------- | ------------------------- |
+| None                | index.html<br />index.css |
+
+### Explicación
+
+Agregamos los media queries para la barra de navegacion.
+
+```css
+.main-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 480px){
+	.main-nav {
+		flex-direction: row;
+		justify-content: space-around;
+	} 
+}
+```
+
+* En el proyecto trabajaremos con el modelo Mobile First, por lo tanto, las propiedades que apliquemos al media querie seran para dispositivos mayores de 480px.
+* Por lo tanto, en el **main-nav** hemos colocado las propiedades para movil (el **flex-direction: column** y el **align-items: center**)
+* Por otra parte, el media querie estable el **flex-direction: row** y el **justify-content: space-around** para el nav
+
+Los Media Queries permiten ejecutar codigo CSS cuando se cumple una condicion. Es ideal para el diseño responsivo.
+
+```css
+@media (max-width: 768px){
+    background-color: red;
+}
+```
+
+* Este código se ejecuta para pantallas que tengan una resolucion maxima de 768px hacia abajo.
+
+```css
+@media (min-width: 1368px){
+	background-color: blue;
+}
+```
+
+* Este codigo se ejecuta para pantallas que tengan una resolucion minima de 1368px hacia arriba.
+
+En el Desarrollo Web se suele hablar del Mobile First, que consiste en desarrollar primero el sitio adaptado para moviles, y luego, con media queries en **min-width** adaptarlo a tablets y pantallas de escritorio.
+
+### Tamaños estándar para pantallas
+
+* **480px** --> Teléfonos Móviles
+* **768px** --> Tablets 
+* **1140px** --> Pantallas de Escritorio y Laptops
+* **1368px** --> Pantallas de Escritorio y Laptops
+* **1440px** --> Pantallas de Escritorio y Laptops
+
+------
+

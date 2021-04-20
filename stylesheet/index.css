@@ -34,7 +34,15 @@ Ej: 18px * 2.441 */
 
 .main-nav {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 768px){
+	.main-nav {
+		flex-direction: row;
+		justify-content: space-around;
+	} 
 }
 
 .main-nav a {
@@ -55,5 +63,8 @@ Ej: 18px * 2.441 */
 	margin: 0 auto; 
 }
 
-
-
+.hero {
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
