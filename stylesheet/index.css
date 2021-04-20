@@ -8,11 +8,16 @@
 /* Para tener un mejor manejo del tamaño de las tipografias, definir un tamaño estandar */
 html {
 	font-size: 18px;
+	box-sizing: border-box;
+}
+
+*, *:before, *:afer {
+	box-sizing: inherit;
 }
 
 /* Establecemos la familia de la fuente y el color */
 body {
-	background-color: #F9F5FF;
+	background-image: linear-gradient(to top, #F2E9FF 0%, #F9F5FF 100%) ;
 	font-family: Roboto;
 	color: #09001A;
 	font-weight: lighter;
@@ -20,6 +25,36 @@ body {
 
 /* Alineamos la clase titulo al centro y el tamaño será de 2.441rem. Es decir, el tamaño estandar de la fuente multiplicado por los rem
 Ej: 18px * 2.441 */
+
+a {
+	text-decoration-line: none;
+}
+
+.sombra {
+	box-shadow: 0px 20px 20px -5px rgba(31,0,31,0.15);
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 0.75rem;
+}
+
+.button {
+	background-color: #7D05D0;
+	color: #F0E4FE;
+	padding: 1rem 2rem;
+	margin-top: 3rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 50%;
+	text-align: center;
+	border-radius: 0.5rem;
+}
+
+@media (min-width: 480px){
+	.button {
+		width: auto;
+	}
+}
 
 .titulo {
 	font-weight: 700;
@@ -38,18 +73,10 @@ Ej: 18px * 2.441 */
 	align-items: center;
 }
 
-@media (min-width: 768px){
-	.main-nav {
-		flex-direction: row;
-		justify-content: space-around;
-	} 
-}
-
 .main-nav a {
 	color: #F0E4FE;
-	text-decoration-line: none;
 	font-size: 1.5rem;
-	padding: 1rem;
+	padding: 0.5rem;
 	font-weight: 200;
 }
 
@@ -58,13 +85,71 @@ Ej: 18px * 2.441 */
 	color: #09001A;
 }
 
-.nav-container {
+.container {
 	width: 75%;
 	margin: 0 auto; 
 }
 
-.hero {
+/* Media querie para el navbar*/
+@media (min-width: 768px){
+	.main-nav {
+		flex-direction: row;
+		justify-content: space-around;
+	} 
+}
+
+/* Hero */
+.hero-container {
 	background-image: url("../img/header.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 20rem;
+	padding: 1rem;
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+/* Al aplicar display flex, alineamos horizontalmente con justify-content y verticalmente con align-items 
+
+Cuando cambias el flex-direction a column, las alineaciones se hacen de manera inversa*/
+.hero-content {
+	position: absolute;
+	background-color: #00000033;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	/* Centrar vertical y horizontalmente al centro*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-content h2, 
+.hero-content p,
+.hero-content a {
+	color: #F0E4FE;
+}
+
+.ubic {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+/* Servicios */
+
+.services {
+	display: grid;  
+	grid-row-gap: 1rem;
+}
+
+@media (min-width: 768px){
+	.services {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 1rem;
+	}
 }

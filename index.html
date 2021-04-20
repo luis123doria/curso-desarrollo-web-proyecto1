@@ -21,49 +21,53 @@
 
 	<!-- El nav se usa para agregar una barra de navegacion. Generalmente usa enlaces -->
 	<div class="nav-bg">
-		<nav class="main-nav nav-container"> 
+		<nav class="main-nav container"> 
 			<a href="#">Home</a>
 			<a href="#">About Us</a>
 			<a href="#">Contact</a>
 		</nav>
 	</div>
 
-	<!-- Agregamos un icono #7D05D0 -->
-
-	<!-- Si empieza con un heading debe ir un section-->
-	<section class="hero">
-		<div class="hero-container">
+	<!-- Hero (imagen con info principal -->
+	<section class="hero-container">
+		<div class="hero-content">
 			<h2>Una Comunidad de Freelancers</h2>
-			<img src="img/map-solid-60.png">
-			<p>Caracas, Venezuela </p>
-			<a>Contactar</a>
+			<div class="ubic">
+				<p>Caracas, Venezuela </p>
+				<!-- Agregamos un icono #7D05D0 -->
+				<img src="img/map-solid-60.png">
+			</div>
+			<a class="button" href="#">Contactar</a>
 		</div>
 	</section>
 
 	<!-- El main tiene nuestro contenido principal -->
-	<main>
+	<main class="container sombra">
 		<h2>Nuestros Servicios</h2>
 
-		<section>
-			<h3>Diseño Web</h3>
-			<!-- Icono para el section -->
-			<img src="img/html5-logo-60.png" alt="">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam.</p>
-		</section>
+		<div class="services">
+			<section>
+				<h3>Diseño Web</h3>
+				<!-- Icono para el section -->
+				<img src="img/html5-logo-60.png" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam.</p>
+			</section >
 
-		<section>
-			<h3>Apps Moviles</h3>
-			<!-- Icono para el section -->
-			<img src="img/mobile-alt-regular-60.png" alt="">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam.</p>
-		</section>
+			<section>
+				<h3>Apps Moviles</h3>
+				<!-- Icono para el section -->
+				<img src="img/mobile-alt-regular-60.png" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam.</p>
+			</section>
 
-		<section>
-			<h3>UI/UX</h3>
-			<!-- Icono para el section -->
-			<img src="img/fullscreen-regular-60.png" alt="">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam.</p>
-		</section>	
+			<section>
+				<h3>UI/UX</h3>
+				<!-- Icono para el section -->
+				<img src="img/fullscreen-regular-60.png" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam.</p>
+			</section>	
+		</div>
+		
 	</main>
 
 	<section>

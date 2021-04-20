@@ -561,3 +561,79 @@ En el Desarrollo Web se suele hablar del Mobile First, que consiste en desarroll
 
 ------
 
+## Commit Nro 12 - v1.3
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados**     |
+| ------------------- | ------------------------- |
+| None                | index.html<br />index.css |
+
+### Explicación
+
+Hemos añadido el hero, que contiene un titulo un texto y un boton con enlace.
+
+* Código HTML
+
+```html
+<!-- Hero (imagen con info principal -->
+<section class="hero-container">
+	<div class="hero-content">
+		<h2>Una Comunidad de Freelancers</h2>
+	<div class="ubic">
+		<p>Caracas, Venezuela </p>
+		<!-- Agregamos un icono #7D05D0 -->
+		<img src="img/map-solid-60.png">
+	</div>
+		<a class="button" href="#">Contactar</a>
+	</div>
+</section>
+```
+
+* Código CSS
+
+```css
+.hero-container {
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 20rem;
+	padding: 1rem;
+	position: relative;
+}
+
+/* Al aplicar display flex, alineamos horizontalmente con justify-content y verticalmente con align-items 
+
+Cuando cambias el flex-direction a column, las alineaciones se hacen de manera inversa*/
+.hero-content {
+	position: absolute;
+	background-color: #00000033;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	/* Centrar vertical y horizontalmente al centro*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-content h2, 
+.hero-content p,
+.hero-content a {
+	color: #F0E4FE;
+}
+
+.ubic {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-top: 1rem;
+```
+
+Con eso hemos dado unos buenos estilos al hero.
+
+------
+
