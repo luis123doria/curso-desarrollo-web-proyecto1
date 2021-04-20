@@ -637,3 +637,81 @@ Con eso hemos dado unos buenos estilos al hero.
 
 ------
 
+## Commit Nro 13 - v1.4
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados**     |
+| ------------------- | ------------------------- |
+| None                | index.html<br />index.css |
+
+### Explicación
+
+Hemos editado la seccion de **Nuestros Servicios**, usando CSS Grid para la estructura y Flexbox para la alineación de los elementos.
+
+* Código HTML:
+
+```html
+<main class="container sombra">
+	<h2>Nuestros Servicios</h2>
+
+	<div class="services">
+		<section class="service">
+			<h3>Diseño Web</h3>
+			<div class="icono">
+				<!-- Icono para el section -->
+				<img src="img/html5-logo-60.png" alt="">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam.</p>
+		</section >
+	</div>
+</main>
+```
+
+Aqui definimos un servicio dividido en el titulo (el h3), un icono y un parrafo.
+
+* Código CSS:
+
+```css
+/* Servicios */
+
+.services {
+	display: grid;  
+	grid-row-gap: 1rem;
+}
+
+@media (min-width: 768px){
+	.services {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 1rem;
+	}
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service p {
+	text-align: center;
+	line-height: 2;
+}
+
+.service .icono {
+	height: 125px;
+	width: 125px;
+	background-color: #F0E4FE;
+	border-radius: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+```
+
+El **services** establece el **display: grid** para dispositivos moviles, y el media querie para dispositivos mayores.
+
+Luego estan las propiedades de **service** para el servicio individual, que alinea los elementos hijos con Flexbox.
+
+------
+
