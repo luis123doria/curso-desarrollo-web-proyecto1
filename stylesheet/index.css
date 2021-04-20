@@ -41,13 +41,18 @@ a {
 	background-color: #7D05D0;
 	color: #F0E4FE;
 	padding: 1rem 2rem;
-	margin-top: 3rem;
+	margin-top: 1rem;
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-weight: bold;
 	width: 50%;
 	text-align: center;
 	border-radius: 0.5rem;
+	border: none;
+}
+
+.button:hover {
+	cursor: pointer;
 }
 
 @media (min-width: 480px){
@@ -138,6 +143,7 @@ Cuando cambias el flex-direction a column, las alineaciones se hacen de manera i
 	flex-direction: row-reverse;
 	align-items: center;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 /* Servicios */
@@ -173,4 +179,35 @@ Cuando cambias el flex-direction a column, las alineaciones se hacen de manera i
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* Formulario */
+
+.form-container h2{
+	text-align: center;
+}
+.formulario {
+	width: min(10rem, 100%); /* Usa el valor mas pequeño*/
+	margin: 0 auto;
+}
+
+.field {
+	margin-bottom: 1rem;
+}
+
+.field input{
+	padding: 0.5rem;
+}
+
+.field input[type="textarea"] {
+	height: 5rem;
+}
+
+.enviar .button {
+	width: 125%;
+}
+
+/* Footer*/
+.footer {
+	text-align: center;
 }

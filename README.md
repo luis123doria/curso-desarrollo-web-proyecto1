@@ -715,3 +715,56 @@ Luego estan las propiedades de **service** para el servicio individual, que alin
 
 ------
 
+## Commit Nro 14 - v1.5
+
+### Cambios realizados 
+
+| **Archivos Nuevos** | **Archivos Editados**     |
+| ------------------- | ------------------------- |
+| None                | index.html<br />index.css |
+
+### Explicación
+
+Hemos editado el Formulario con sus respectivos estilos.
+
+* Código CSS:
+
+```css
+/* Formulario */
+
+.form-container h2{
+	text-align: center;
+}
+.formulario {
+	width: min(10rem, 100%); /* Usa el valor mas pequeño*/
+	margin: 0 auto;
+}
+
+.field {
+	margin-bottom: 1rem;
+}
+
+.field input{
+	padding: 0.5rem;
+}
+
+.field input[type="textarea"] {
+	height: 5rem;
+}
+
+.enviar .button {
+	width: 125%;
+}
+
+/* Footer*/
+.footer {
+	text-align: center;
+}
+```
+
+Son propiedades de alineación, margin y padding.
+
+También hemos añadido el estilo para el **footer**, que es una alineación al centro.
+
+------
+

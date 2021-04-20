@@ -74,33 +74,34 @@
 			</section>	
 		</div> 
 		
-	
 
-		<section>
+		<section class="form-container">
 			<h2>Contáctanos</h2>
 
 			<!-- Agregamos un formulario con form-->
-			<form action="">
+			<form class="formulario" action="">
 
-				<!-- Agrupamos cada input en un div (divider) -->
-				<div>
-					<input type="text" placeholder="Nombre">
-				</div>
-				
-				<div>
-					<input type="email" placeholder="Correo">
-				</div>
+				<div class="field-container">
+					<!-- Agrupamos cada input en un div (divider) -->
+					<div class="field">
+						<input type="text" placeholder="Nombre">
+					</div>
+					
+					<div class="field">
+						<input type="email" placeholder="Correo">
+					</div>
 
-				<div>
-					<input type="text" placeholder="Teléfono">
-				</div>
+					<div class="field field-tlf">
+						<input type="text" placeholder="Teléfono">
+					</div>
 
-				<div>
-					<input type="textarea" placeholder="Mensaje">
-				</div>
+					<div class="field field-textarea">
+						<input type="textarea" placeholder="Mensaje">
+					</div>
+				</div>	
 
-				<div>
-					<input type="submit" value="Enviar">
+				<div class="enviar">
+					<input class="button" type="submit" value="Enviar">
 				</div>
 
 			</form>
@@ -109,7 +110,7 @@
 	</main>
 
 	<!-- El footer para pie de pagina -->
-	<footer>
+	<footer class="footer">
 		<p>All Rights Reserved. Luisfer Doria, 2021</p>
 	</footer>
 
