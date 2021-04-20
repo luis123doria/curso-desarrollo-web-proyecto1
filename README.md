@@ -768,3 +768,26 @@ También hemos añadido el estilo para el **footer**, que es una alineación al 
 
 ------
 
+## Commit Nro 15 - v1.6
+
+### Cambios realizados
+
+| **Archivos Nuevos** | **Archivos Editados**     |
+| ------------------- | ------------------------- |
+| None                | index.html<br />index.css |
+
+### Explicación
+
+Hemos añadido el Scroll Snap, que permite un scroll peculiar en el sitio web
+
+```css
+/* Scroll Snap */
+.services, .main-nav, .form-container {
+	scroll-snap-align: center;
+	scroll-snap-stop: always;
+}
+```
+
+------
+
+Con esto hemos terminado el Proyecto Freelancer
